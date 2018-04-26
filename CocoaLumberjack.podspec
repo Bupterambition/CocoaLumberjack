@@ -49,13 +49,5 @@ Pod::Spec.new do |s|
     ss.osx.public_header_files  = 'Classes/CLI/*.h'
   end
 
-  s.subspec 'Swift' do |ss|
-    ss.ios.deployment_target      = '8.0'
-    ss.osx.deployment_target      = '10.10'
-    ss.watchos.deployment_target  = '2.0'
-    ss.tvos.deployment_target     = '9.0'
-    ss.dependency 'CocoaLumberjack/Default'
-    ss.source_files               = 'Classes/CocoaLumberjack.swift'
-  end
   
 end
